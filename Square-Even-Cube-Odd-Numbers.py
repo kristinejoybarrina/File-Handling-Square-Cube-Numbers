@@ -20,6 +20,9 @@ for i in range (len(integer_numbers)):
     # Check if integer is even 
     if (int(integer_numbers [i]) % 2) == 0:
         
+        # Store even numbers in even_integers variable
+        even_integers += integer_numbers [i]
+        
         # Square even integer
         square_numbers = (int(integer_numbers [i])** 2)
         
@@ -34,6 +37,9 @@ for i in range (len(integer_numbers)):
             
     # Check if integer is odd 
     else:
+        
+        # Store odd numbers in even_integers variable
+        odd_integers += integer_numbers [i]
         print ("it's odd!")
 
 # Open a file named triple.txt
