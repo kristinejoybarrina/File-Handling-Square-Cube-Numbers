@@ -24,13 +24,13 @@ for i in range (len(integer_numbers)):
         even_integers += integer_numbers [i]
         
         # Square even integer
-        square_numbers = (int(integer_numbers [i])** 2)
+        square_even = (int(integer_numbers [i])** 2)
         
         # Open a file named double.txt
         with open ("double.txt", "a") as squared:
             
             # Append the squared value of even integers to double.txt
-            squared.write (str(square_numbers) + "\n")
+            squared.write (str(square_even) + "\n")
     
              # Apply loop control 
             i += 1
@@ -40,6 +40,11 @@ for i in range (len(integer_numbers)):
         
         # Store odd numbers in even_integers variable
         odd_integers += integer_numbers [i]
+        
+        # Cube odd integer
+        cube_odd = (int(integer_numbers [i])** 3)
+        print (cube_odd)
+        
         print ("it's odd!")
 
 # Open a file named triple.txt
