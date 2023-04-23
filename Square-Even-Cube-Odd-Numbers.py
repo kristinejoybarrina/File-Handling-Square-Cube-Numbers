@@ -65,5 +65,10 @@ root = Tk ()
 root.geometry("450x150")
 root.title("Square of Even and Cube of Odd")
 
+# Create a label click me
+click_me_label = Label (root, text="Click here!", fg="black", justify=CENTER, font=("Arial", 14, "bold"))
+
+click_me_label.pack ()
+
 tk.mainloop()
 
