@@ -22,17 +22,20 @@ for i in range (len(integer_numbers)):
     if (int(integer_numbers [i]) % 2) == 0:
         
     # Square even integer
-        square_even = (int(integer_numbers [i])** 2)
+        square_numbers = (int(integer_numbers [i])** 2)
         
     # Open a file named double.txt
-        with open ("double.txt", "a") as squared_numbers:
-            print ("it's working!" + str(square_even)) 
+        with open ("double.txt", "a") as squared:
+            print ("it's working!" + str(square_numbers)) 
+            
+    # Append the squared value of even integers to double.txt
+            squared.write (str(square_numbers) + "\n")
 
     else:
         print ("it's odd!")
 
 
-# Append the squared value of even integers to double.txt
+
 # If integer is odd, cube it
 # Open a file named triple.txt
 # Append the cubic value of odd integers to triple.txt
