@@ -76,13 +76,13 @@ def cube_open ():
     os.startfile("triple.txt")
 
 #Create buttons
-squared_button = Button (root, text="SQUARED EVEN NUMBERS", bg="yellow")
-cube_button = Button (root, text="CUBE ODD NUMBERS", bg="yellow")
-close_button = Button (root, text="CLOSE", fg="white", bg="red")
+squared_button = Button (root, text="SQUARED EVEN NUMBERS", bg="yellow", command=squared_open)
+cube_button = Button (root, text="CUBE ODD NUMBERS", bg="yellow",command=cube_open)
+close_button = Button (root, text="CLOSE", fg="white", bg="red", command=root.destroy)
 
 # Let the pack method declares the position attributes
-click_me_label.pack ()
-squared_button.pack ()
+click_me_label.pack(fill="both")
+squared_button.pack()
 cube_button.pack()
 close_button.pack(side="bottom")
 
