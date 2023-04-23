@@ -9,8 +9,7 @@ with open ("integers.txt", "r") as integers:
     # Create a variable that contains all the integers
     integer_numbers = integers.readlines()
     print (integer_numbers)
-    print ("its working!")
-
+    
 # Initialize variables that will store even and odd integers
 even_integers = []
 odd_integers = []
@@ -18,7 +17,7 @@ odd_integers = []
 # Use for loop with range of all integers length
 for i in range (len(integer_numbers)):
 
-# Check if integer is even 
+    # Check if integer is even 
     if (int(integer_numbers [i]) % 2) == 0:
         
         # Square even integer
@@ -26,21 +25,17 @@ for i in range (len(integer_numbers)):
         
         # Open a file named double.txt
         with open ("double.txt", "a") as squared:
-            print ("it's working!" + str(square_numbers)) 
             
             # Append the squared value of even integers to double.txt
             squared.write (str(square_numbers) + "\n")
     
              # Apply loop control 
             i += 1
-        
-
+            
+    # Check if integer is odd 
     else:
         print ("it's odd!")
 
-
-
-# If integer is odd, cube it
 # Open a file named triple.txt
 # Append the cubic value of odd integers to triple.txt
 # Design the output using tkinter
