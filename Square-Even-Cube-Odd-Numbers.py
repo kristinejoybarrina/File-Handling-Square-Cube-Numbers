@@ -20,16 +20,18 @@ for i in range (len(integer_numbers)):
 
 # Check if integer is even 
     if (int(integer_numbers [i]) % 2) == 0:
-        print ("it's even!")
         
     # Square even integer
         square_even = (int(integer_numbers [i])** 2)
-        print (square_even)
         
+    # Open a file named double.txt
+        with open ("double.txt", "a") as squared_numbers:
+            print ("it's working!" + str(square_even)) 
+
     else:
         print ("it's odd!")
 
-# Open a file named double.txt
+
 # Append the squared value of even integers to double.txt
 # If integer is odd, cube it
 # Open a file named triple.txt
