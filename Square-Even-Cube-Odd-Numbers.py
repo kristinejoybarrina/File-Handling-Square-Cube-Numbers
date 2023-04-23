@@ -6,7 +6,7 @@
 # Open a file named integers.txt
 with open ("integers.txt", "r") as integers:
 
-# Create a variable that contains all the integers
+    # Create a variable that contains all the integers
     integer_numbers = integers.readlines()
     print (integer_numbers)
     print ("its working!")
@@ -21,15 +21,19 @@ for i in range (len(integer_numbers)):
 # Check if integer is even 
     if (int(integer_numbers [i]) % 2) == 0:
         
-    # Square even integer
+        # Square even integer
         square_numbers = (int(integer_numbers [i])** 2)
         
-    # Open a file named double.txt
+        # Open a file named double.txt
         with open ("double.txt", "a") as squared:
             print ("it's working!" + str(square_numbers)) 
             
-    # Append the squared value of even integers to double.txt
+            # Append the squared value of even integers to double.txt
             squared.write (str(square_numbers) + "\n")
+    
+             # Apply loop control 
+            i += 1
+        
 
     else:
         print ("it's odd!")
