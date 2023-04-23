@@ -71,11 +71,13 @@ click_me_label = Label (root, text="Click here!", fg="black", justify=CENTER, fo
 #Create buttons
 squared_button = Button (root, text="SQUARED EVEN NUMBERS", bg="yellow")
 cube_button = Button (root, text="CUBE ODD NUMBERS", bg="yellow")
+close_button = Button (root, text="CLOSE", fg="white", bg="red")
 
 # Let the pack method declares the position attributes
 click_me_label.pack ()
 squared_button.pack ()
 cube_button.pack()
+close_button.pack(side="bottom")
 
 tk.mainloop()
 
