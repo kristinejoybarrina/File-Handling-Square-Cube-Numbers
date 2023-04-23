@@ -59,4 +59,11 @@ for i in range (len(integer_numbers)):
         
 # Design the output using tkinter
 # Create an instance window
+root = Tk ()
+
+# Create the dimension of window
+root.geometry("450x150")
+root.title("Square of Even and Cube of Odd")
+
+tk.mainloop()
 
