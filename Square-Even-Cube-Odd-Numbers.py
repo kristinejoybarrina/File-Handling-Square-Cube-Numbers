@@ -18,9 +18,14 @@ odd_integers = []
 # Use for loop with range of all integers length
 for i in range (len(integer_numbers)):
 
-# If integer is even, square it
+# Check if integer is even 
     if (int(integer_numbers [i]) % 2) == 0:
         print ("it's even!")
+        
+    # Square even integer
+        square_even = (int(integer_numbers [i])** 2)
+        print (square_even)
+        
     else:
         print ("it's odd!")
 
