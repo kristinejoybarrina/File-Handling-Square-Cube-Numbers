@@ -11,7 +11,10 @@ with open ("integers.txt", "r") as integers:
     print (integer_numbers)
     print ("its working!")
 
-# Store all integers in a variable list
+# Initialize variables that will store even and odd integers
+even_integers = []
+odd_integers = []
+
 # Use for loop with range of all integers length
 # If integer is even, square it
 # Open a file named double.txt
