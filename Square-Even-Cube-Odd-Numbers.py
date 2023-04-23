@@ -3,6 +3,14 @@
 
 # Pseudocode
 
+# Open a file named integers.txt
+with open ("integers.txt", "r") as integers:
+
+# Create a variable that contains all the integers
+    integer_numbers = integers.readlines()
+    print (integer_numbers)
+    print ("its working!")
+
 # Store all integers in a variable list
 # Use for loop with range of all integers length
 # If integer is even, square it
