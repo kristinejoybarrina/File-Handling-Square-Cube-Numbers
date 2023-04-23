@@ -43,10 +43,11 @@ for i in range (len(integer_numbers)):
         
         # Cube odd integer
         cube_odd = (int(integer_numbers [i])** 3)
-        print (cube_odd)
-        
-        print ("it's odd!")
 
-# Open a file named triple.txt
+        # Open a file named triple.txt
+        with open ("triple.txt", "a") as cube:
+            print (cube_odd)
+            
+        
 # Append the cubic value of odd integers to triple.txt
 # Design the output using tkinter
