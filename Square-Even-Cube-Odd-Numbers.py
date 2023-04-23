@@ -48,6 +48,7 @@ for i in range (len(integer_numbers)):
         with open ("triple.txt", "a") as cube:
             print (cube_odd)
             
+        # Append the cube value of odd integers to triple.txt
+            cube.write (str(cube_odd) + "\n")
         
-# Append the cubic value of odd integers to triple.txt
 # Design the output using tkinter
