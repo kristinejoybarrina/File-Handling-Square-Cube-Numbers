@@ -71,6 +71,9 @@ click_me_label = Label (root, text="Click here!", fg="black", justify=CENTER, fo
 # Define functions for commands
 def squared_open ():
     os.startfile("double.txt")
+    
+def cube_open ():
+    os.startfile("triple.txt")
 
 #Create buttons
 squared_button = Button (root, text="SQUARED EVEN NUMBERS", bg="yellow")
