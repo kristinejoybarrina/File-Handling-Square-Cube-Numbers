@@ -3,6 +3,11 @@
 
 # Pseudocode
 
+# Import python modules
+import tkinter as tk
+from tkinter import *
+import os
+
 # Open a file named integers.txt
 with open ("integers.txt", "r") as integers:
 
@@ -49,7 +54,9 @@ for i in range (len(integer_numbers)):
             # Append the cube value of odd integers to triple.txt
             cube.write (str(cube_odd) + "\n")
             
-            # Apply loop control for even squared numbers
+            # Apply loop control for odd cube numbers
             i += 1
         
 # Design the output using tkinter
+# Create an instance window
+
