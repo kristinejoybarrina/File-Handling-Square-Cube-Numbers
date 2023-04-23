@@ -17,9 +17,13 @@ odd_integers = []
 
 # Use for loop with range of all integers length
 for i in range (len(integer_numbers)):
-    print ("yey!")
 
 # If integer is even, square it
+    if (int(integer_numbers [i]) % 2) == 0:
+        print ("it's even!")
+    else:
+        print ("it's odd!")
+
 # Open a file named double.txt
 # Append the squared value of even integers to double.txt
 # If integer is odd, cube it
